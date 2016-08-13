@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "description": "App for Angularjs and TypeScript.",
+  "main": "index.js",
+  "authors": [
+    "Nogami Yasumasa <nogami@fenrir.co.jp>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/gyamin/starter-AngularTypeScript",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "2.2.4",
+    "angular": "1.5.8"
+  }
+}

@@ -3,7 +3,7 @@
   "description": "App for Angularjs and TypeScript.",
   "main": "index.js",
   "authors": [
-    "Nogami Yasumasa <nogami@fenrir.co.jp>"
+    "gyamin"
   ],
   "license": "ISC",
   "homepage": "https://github.com/gyamin/starter-AngularTypeScript",

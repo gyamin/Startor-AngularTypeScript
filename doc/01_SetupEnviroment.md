@@ -47,12 +47,14 @@ $ cd app/
 $ npm install bower --save
 $ npm install typings --save
 $ npm install node-sass --save
+$ npm install watch --save
 ```
 
 ### bowerによるフロントライブラリのインストール
 ```
 $ ./node_modules/bower/bin/bower install jQuery#2.2.4 --save
 $ ./node_modules/bower/bin/bower install angular#1.5.8 --save
+$ ./node_modules/bower/bin/bower install bootstrap#3.3.7 --save
 ```
 
 ### Typingsによる型定義の導入
@@ -71,6 +73,10 @@ $ ./node_modules/bower/bin/bower install angular#1.5.8 --save
     $ typings install dt~angular --save --global
     typings INFO reference Stripped reference "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/12ede35d5b3d5d5595ce6edf41f6f1a96ea33d1f/jquery/jquery.d.ts" during installation from "angular" (main)
     angular
+    └── (No dependencies)
+    $ typings install dt~bootstrap --save --global
+    typings INFO reference Stripped reference "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/1f0791147c6c145227b1778bb26781a79d516917/jquery/jquery.d.ts" during installation from "bootstrap" (main)
+    bootstrap
     └── (No dependencies)
     ```
 

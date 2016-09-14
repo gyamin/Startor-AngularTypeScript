@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "clean": "bin/clean.sh",
-    "build:bower":  "bin/build_bower.sh $npm_package_config_postfix",
-    "build:ts":     "bin/build_ts.sh",
-    "watch:ts":     "bin/build_ts.sh watch",
-    "build:sass":   "bin/build_sass.sh",
-    "watch:sass":   "bin/build_sass.sh watch",
-    "build:all":    "npm run build:bower & npm run build:ts & npm run build:sass",
-    "watch:all":    "npm run watch:ts & npm run watch:sass"
+    "build:bower": "bin/build_bower.sh $npm_package_config_postfix",
+    "build:ts": "bin/build_ts.sh",
+    "watch:ts": "bin/build_ts.sh watch",
+    "build:sass": "bin/build_sass.sh",
+    "watch:sass": "bin/build_sass.sh watch",
+    "build:html": "bin/deploy_html.sh",
+    "watch:html": "bin/deploy_html.sh watch",
+    "build:all": "npm run build:bower & npm run build:ts & npm run build:sass & npm run build:html",
+    "watch:all": "npm run watch:ts & npm run watch:sass & npm run watch:html"
   },
   "config": {
     "postfix": ".min"
@@ -24,6 +26,7 @@
     "bower": "^1.7.9",
     "node-sass": "^3.9.3",
     "typescript": "^1.8.10",
-    "typings": "^1.3.2"
+    "typings": "^1.3.2",
+    "watch": "^0.19.2"
   }
 }
